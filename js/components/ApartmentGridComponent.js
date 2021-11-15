@@ -27,7 +27,11 @@ class ApartmentGridComponent {
     this.render();
   };
   deleteApartment = (id) => {
-    API.deleteApartment(id, () => API.fetchApartments(this.saveApartments, alert), alert);
+    API.deleteApartment(
+      id,
+      () => API.fetchApartments(this.saveApartments, alert),
+      alert
+    );
   };
 
   init = () => {
@@ -39,15 +43,33 @@ class ApartmentGridComponent {
     this.render();
   };
 
+  wrapInColumn = (element) => {
+    const column = document.createElement("div");
+    column.className = "col-12 col-sm-6 col-lg-4 col-xl-3";
+    column.appendChild(element);
+    return column;
+  };
+
   render = () => {
     const { loading, apartments } = this.state;
     if (loading) {
-      this.htmlElement.innerHTML = `<div class="text-center"><img src="assets/loading.gif"/></br><span>Siunciama</span></div>`;
+      this.htmlElement.innerHTML = `<div class="text-center"><img src="assets/loading.gif"/></div>`;
     } else if (apartments.length > 0) {
-      this.htmlElement.innerHTML = `<div class="text-center"></br><span>Atsiusta</span></div>`;
+      this.htmlElement.innerHTML = "";
+      const apartmentsElements = apartments
+        .map(
+          ({ id, ...props }) =>
+            new ApartmentCardComponent({
+              ...props,
+              onDelete: () => this.deleteApartment(id),
+            })
+        )
+        .map((x) => x.htmlElement)
+        .map(this.wrapInColumn);
+      this.htmlElement.append(...apartmentsElements);
     } else {
       this.htmlElement.innerHTML = `<h2>Šiuo metu mašinų nėra</h2>`;
     }
     console.log(apartments);
-    };
+  };
 }
