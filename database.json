@@ -1,0 +1,118 @@
+{"apartments": [
+     {
+        "id": "1",
+        "type": "house",
+        "owner": {
+          "fullname": "Jonas",
+          "mobile": "86854999",
+          "email": "JonasK@gmail.com"
+        },
+        "roomCount": 5,
+        "squares": 300,
+        "adress": {
+          "city": "Vilnius",
+          "country": "Lithuania",
+          "street": "Eitminų",
+          "number": 10
+        },
+        "price": {
+          "amount": 10000,
+          "currency": "$"
+        },
+        
+        "imgSrc": "https://www.ober-haus.lt/wp-content/themes/oh/propertyimgcache_x800/9067912/80538844.jpg"
+      },
+     {
+        "id": "2",
+        "type": "flat",
+        "owner": {
+          "fullname": "Maiklas",
+          "mobile": "86854999",
+          "email": "MK@gmail.com"
+        },
+        "roomCount": 2,
+        "squares": 100,
+        "adress": {
+          "city": "Kaunas",
+          "country": "Lithuania",
+          "street": "Vilniaus g.",
+          "number": 9
+        },
+        "price": {
+          "amount": 200000,
+          "currency": "€"
+        },
+        
+        "imgSrc": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/241120715.jpg?k=3f6a5b8ac697b022416173e4ce09fa59878742beb473f44919b91026fc77fdaf&o=&hp=1"
+      },
+     {
+        "id": "3",
+        "type": "cottage",
+        "owner": {
+          "fullname": "Matas",
+          "mobile": "86888999",
+          "email": "Maikas@gmail.com"
+        },
+        "roomCount": 5,
+        "squares": 250,
+        "adress": {
+          "city": "Klaipeda",
+          "country": "Lithuania",
+          "street": "Klaipedos",
+          "number": 10
+        },
+        "price": {
+          "amount": 10000,
+          "currency": "€"
+        },
+        
+        "imgSrc": "https://gilesta.lt/wp-content/uploads/2019/08/visoriai-1200x800.jpg"
+      },
+     {
+        "id": "4",
+        "type": "house",
+        "owner": {
+          "fullname": "Džemalas",
+          "mobile": "86854999",
+          "email": "Dž@gmail.com"
+        },
+        "roomCount": 8,
+        "squares": 1000,
+        "adress": {
+          "city": "Utena",
+          "country": "Lithuania",
+          "street": "Krienu",
+          "number": 10
+        },
+        "price": {
+          "amount": 500000,
+          "currency": "$"
+        },
+        
+        "imgSrc": "https://gilesta.lt/wp-content/uploads/2019/08/visoriai-1200x800.jpg"
+      },
+     {
+        "id": "5",
+        "type": "flat",
+        "owner": {
+          "fullname": "Mo Sizlakas",
+          "mobile": "86854999",
+          "email": "Mo@gmail.com"
+        },
+        "roomCount": 1,
+        "squares": 150,
+        "adress": {
+          "city": "Springfildas",
+          "country": "Lithuania",
+          "street": "Simsonu",
+          "number": 10
+        },
+        "price": {
+          "amount": 10000,
+          "currency": "$"
+        },
+        
+       "imgSrc": "https://gilesta.lt/wp-content/uploads/2019/08/visoriai-1200x800.jpg"
+      }
+    ];
+}
